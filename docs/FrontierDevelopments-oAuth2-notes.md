@@ -21,6 +21,9 @@
 once access is granted.  You will probably have 'AUTH' and 'CAPI' scopes.
 Clicking 'View' on this will reveal your Client ID and Shared Key.
 You can also 'Regenerate key' here if you ever need to.
+For newly created clients it seems that no shared keys are issued anymore
+(or with a massive delay of several weeks or months) and you will need to fall
+back to PKCE.
 
  There is a link to <https://user.frontierstore.net/developer/docs>,
 the developer documentation.  If you are wanting to use CAPI with a
@@ -72,6 +75,7 @@ you can invoke a browser with it.
 rather than a Steam, XBox, or Playstation account.  See the 'AUDIENCE'
 part of <https://user.frontierstore.net/developer/docs> for the valid
 values.
+  However, this is an optional parameter. If it is not provided, the Frontier authentication will let the user choose the platform.
 
   A 'scope' of 'auth capi' means we're requesting access to the CAPI, instead
 of just 'auth' which would just let us know some information associated
