@@ -325,7 +325,7 @@ provides access to information about the Cmdr's fleet carrier.
 1. `cargo`: A list of all cargo items on board, in the following format:
     1. `commodity`: Non-localized commodity name
     1. `mission`: Whether the commodity is mission attached, boolean
-    1. `qty`: Quantity of commodity (Always 1, in our experience)
+    1. `qty`: Quantity of commodity
     1. `value`: Value of commodity
     1. `stolen`: Whether the commodity is flagged as stolen
     1. `locName`: Localized name of commodity, follows carrier owner's localization
